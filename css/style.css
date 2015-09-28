@@ -1,0 +1,320 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in LDN
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack - stops padding from affecting overall box width as a %*/
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after,
+.clearfix:before {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/*DO WE NEED
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+/*DO WE NEED
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+.container{
+  margin: 0 auto 0 auto; /*This centres the content on the page left/right, based on the content*/
+  position: center;
+  }
+
+/*This is one way to get images to replace text on links*/
+.ir{
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: white;
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+.homepage{
+  background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
+  background-size: cover;
+}
+
+.blogcontainer{
+  background: #f0efef center;
+  background-size: cover;
+  margin: 0 auto 0 auto;
+  max-width: 960px;
+}
+
+.blogmain{
+  text-align: left;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+img{
+  max-width:100%; /*Image is constrained by its container*/
+}
+
+/*****************************************
+LAYOUT AND STYLE
+******************************************/
+
+.left{
+  width: 700px;
+  float:left;
+  margin-right: 20px;
+  position: center;
+  padding: 0 25px 25px 25px;
+}
+
+section {
+  width: 240px;
+  float: right;
+  color: #033048;
+}
+
+
+.benefits{
+  display: block;
+  width: 100%;
+  background-color: #f0efef;
+  padding: 15px 180px 15px 60px;
+  text-align: left;
+  color: #033048
+}
+
+header{
+
+}
+.menu{
+  background: #033048;
+  padding: 30px 0 30px 0;
+}
+
+nav{
+  display: inline-block;
+  margin-left: 300px;
+
+}
+
+a{
+  font-size: 24px;
+  font-weight: 300;
+  color: #f9e42e;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+li{
+  list-style: none;
+  display:block;
+  list-style-position: inside;
+  font-size: 24px;
+  font-weight: 200px;
+}
+
+h1 {
+  text-align: left;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.blog_h1{
+  display: inline-block;
+  margin-left: inherit;
+}
+
+.homepageh1{
+  margin: 15px 60px 50px 60px;
+}
+
+h2{
+  font-weight:600;
+  font-size:24px;
+}
+
+.blogh2{
+  font-weight: 400;
+  font-size: 40px;
+  color: #033048;
+}
+
+.blogp{
+  font-weight: 200px;
+  font-size:24px;
+  color: #606161;
+}
+
+.blogh3{
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.abouth3{
+  font-weight: 600;
+  font-size: 32px;
+  margin-top: 30px;
+}
+
+
+.aboutp3{
+  font-size: 22px;
+  font-weight: 200;
+}
+
+.readmore{
+  font-size: 24px;
+  font-weight: 600;
+  color: #606161;
+  float: right;
+}
+
+.learnmore{
+  color:#033048;
+
+}
+hr{
+  clear: both;
+}
+
+.categories{
+  font-size: 24px;
+  font-weight: 200;
+  margin-left: 10px;
+  padding: 0;
+
+}
+#top{
+  margin: 50px 0 0 0;
+  text-align: center;
+}
+
+button{
+  font-weight: 800;
+  font-size: 14px;
+  padding: 5px 20px;
+  border-style: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#getit{
+  background-color:#f9e42e;
+  color: #033048;
+  margin: 40px;
+}
+
+.benefitshead{
+  font-size: 20px;
+}
+
+ul{
+  list-style: circle;
+  padding-left: 80px
+}
+
+
+
+.testimonial{
+  padding: 60px 100px 60px 100px;
+  /*width: 50%;  How do I make this work?*/
+  font-weight: 300;
+  font-size: 18px;
+  font-style:italic;
+}
+
+#amanda{
+  font-weight: 600;
+  font-size:18px;
+  font-style:normal;
+}
+
+.banner{
+  clear: both;
+  background-color: #f9e42e;
+}
+
+#signup{
+    color: white;
+    background-color: #033048;
+    font-size: 12px;
+    margin: 15px;
+  }
+
+
+
+footer{
+  background-color: #121212;
+  padding: 30px 0 30px 0;
+  clear
+}
+
+.yellow{
+  color: #f9e42e;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+}
+
+.twitter{
+    width: 48px;
+    height: 48px;
+    margin: 20px 0 20px 0;
+    display: inline-block;
+    background: url(../images/twitter.png);
+    background-repeat: no-repeat;
+  }
+
+.facebook{
+    width: 48px;
+    height: 48px;
+    margin: 20px 0 20px 0;
+    display: inline-block;
+    background: url(../images/facebook.png);
+    background-repeat: no-repeat;
+  }
+
+#copyright{
+    font-weight:600;
+    font-size:9px;
+    margin: 15px;
+  }
+
+
+  /*QUESTIONS: 1) How do I get the footer aligned?  2) When I used percentages to define the column width, I could not get the box size hack to work
